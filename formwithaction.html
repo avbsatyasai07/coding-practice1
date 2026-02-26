@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Details</title>
+</head>
+<body>
+
+<h2>Submitted Registration Details</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Field</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td><script>document.write(new URLSearchParams(window.location.search).get("name"));</script></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><script>document.write(new URLSearchParams(window.location.search).get("password"));</script></td>
+    </tr>
+    <tr>
+        <td>Mobile Number</td>
+        <td><script>document.write(new URLSearchParams(window.location.search).get("mobile"));</script></td>
+    </tr>
+    <tr>
+        <td>Date of Birth</td>
+        <td><script>document.write(new URLSearchParams(window.location.search).get("dob"));</script></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><script>document.write(new URLSearchParams(window.location.search).get("gender"));</script></td>
+    </tr>
+</table>
+
+</body>
+</html>

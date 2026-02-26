@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Combinators Example</title>
+    <style>
+        div p {
+            color: blue;
+        }
+        div > p {
+            font-weight: bold;
+        }
+        h1 + p {
+            color: red;
+        }
+        h1 ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Direct child paragraph (bold + blue)</p>
+        <section>
+            <p>Nested descendant paragraph (blue only)</p>
+        </section>
+    </div>
+
+    <h1>Main Heading</h1>
+    <p>Adjacent sibling paragraph (red + italic)</p>
+    <p>General sibling paragraph (italic)</p>
+</body>
+</html>
