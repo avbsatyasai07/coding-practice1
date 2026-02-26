@@ -1,0 +1,13 @@
+from itertools import groupby
+
+def compress_string():
+    S = input().strip()
+    
+    # group is an iterator, so we convert it to a list to get its length
+    results = [(len(list(group)), int(key)) for key, group in groupby(S)]
+    
+    # Unpack the list of tuples into the required space-separated format
+    print(*results)
+
+if __name__ == "__main__":
+    compress_string()
